@@ -484,15 +484,6 @@ function App() {
               </div>
               <div className="team-member" data-animate="true">
                 <div className="member-image">
-                  <img src="assets/images/Areeba-Manzoor-Head-of-Strategy.webp" alt="Strategy Head" />
-                </div>
-                <div className="member-info">
-                  <h4 className="member-name">Areeba Manzoor</h4>
-                  <span className="member-role">Head of Strategy</span>
-                </div>
-              </div>
-              <div className="team-member" data-animate="true">
-                <div className="member-image">
                   <img src="assets/images/Rahul-Singh-Head-Production1.webp" alt="Production Head" />
                 </div>
                 <div className="member-info">
