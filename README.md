@@ -1,16 +1,94 @@
-# React + Vite
+# StoryHouse — Creative Studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for **StoryHouse**, a creative advertising and brand-content studio focused on storytelling, content production, and digital growth for D2C brands.
 
-Currently, two official plugins are available:
+**Live website:** [storyhouseagency.in](https://storyhouseagency.in/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+Built as a React single-page experience, the StoryHouse website presents the studio's services, selected campaign work, team, creative process, and enquiry form. The interface combines bold typography, custom motion details, and an image- and video-led visual style.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Responsive layout with mobile navigation
+- Animated preloader, custom cursor, scroll-reveal effects, and number counters
+- Dedicated sections for the studio, services, campaigns, leadership, and creative process
+- Image and video assets showcasing the studio's work
+- Contact form integrated with Web3Forms
+- SEO and social-sharing metadata, canonical URL, and XML sitemap
+- Firebase Hosting configuration with HTTPS-related security headers and single-page-app routing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+| Area | Technology |
+| --- | --- |
+| Frontend | React 19, JavaScript (JSX) |
+| Build tooling | Vite 8 |
+| Styling | CSS3 |
+| Forms | Web3Forms |
+| Hosting configuration | Firebase Hosting |
+| Icons and typography | Font Awesome, Google Fonts |
+
+## Getting Started
+
+**Requirements:** Node.js and npm compatible with Vite 8.
+
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Open the local URL printed in your terminal.
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+The production files are generated in `dist/`.
+
+### Code Quality
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+storyhouse-main/
+├── public/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── videos/
+│   ├── privacy.html
+│   ├── terms.html
+│   └── sitemap.xml
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── firebase.json
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Deployment
+
+The repository includes Firebase Hosting configuration for serving the built application from `dist/`. After installing and authenticating the Firebase CLI for an authorized project:
+
+```bash
+npm run build
+firebase deploy --only hosting
+```
+
+---
+
+*Website developed for StoryHouse Creative Studio.*
